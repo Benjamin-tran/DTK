@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Kalender</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+<svg style="visibility:hidden;" width="0" height="0"> 
+  <filter id="duotone" color-interpolation-filters="sRGB">         <feColorMatrix type="matrix" values="0.300  0.000  0.000  0.000  0.200 
+               0.600  0.000  0.000  0.000  0.200 
+               0.800  0.000  0.000  0.000  0.600 
+               0.000  0.000  0.000  1.000  0.000"></feColorMatrix> 
+  </filter>
+</svg>
+
+<div class="flex-contatiner">
+	<div class="calendar-container">
+		<div class="image-container">
+			<div class="image"></div>
+		</div>
+		<div class="calendar">
+			<h2 class="month-title" id="js-month"></h2>
+			<table class="calendar-table">
+  			<thead>
+    			<tr><th>Mo</th><th>Di</th><th>Mi</th><th>Do</th><th>Fr</th><th>Sa</th><th>So</th></tr>
+  			</thead>
+  			<tbody id="js-calendar-body"></tbody>
+			</table>
+		</div>
+	</div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
